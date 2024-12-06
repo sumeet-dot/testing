@@ -1,25 +1,7 @@
 import React from "react";
-import { Container, Grid, Breadcrumbs, Typography, Link } from "@mui/material";
+import { Container, Grid, Breadcrumbs, Typography, Box, TextField } from "@mui/material";
 import Header from "./components/Header";
-import ItemCard from "./components/ItemCard";
-
-const items = [
-  {
-    title: "Handmade Vase",
-    description: "A beautiful handmade vase perfect for home decor.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    title: "Knitted Scarf",
-    description: "A warm and cozy knitted scarf for winter.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    title: "Wooden Sculpture",
-    description: "An intricately carved wooden sculpture.",
-    image: "https://via.placeholder.com/150",
-  },
-];
+import { ItemCardList } from "./components/ItemCard";
 
 const App = () => {
   return (
@@ -27,7 +9,7 @@ const App = () => {
       <style>
         {`
           body {
-            background-color: black;
+            background-color: #A50E00;
             color: white;
           }
           .breadcrumb-section {
@@ -43,6 +25,37 @@ const App = () => {
             color: #602020; /* Gold color */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow */
           }
+          .tagline {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+          }
+          .tagline span {
+            color: white;
+            margin-top: 50px;
+            font-size: 82px;
+            font-weight: bold;
+            
+          }
+          .about-us-section {
+           background-color: #A50E00;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+          }
+          .about-us-section h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+          }
+          .about-us-section p {
+            font-size: 28px;
+            margin: 0;
+          }
         `}
       </style>
       <Header />
@@ -57,16 +70,24 @@ const App = () => {
           <Typography variant="h6" className="gold-text" style={{ marginTop: "-50px", fontSize: "125px", fontWeight: 'bold', fontFamily: 'palatino', marginLeft: "-50px" }}>
             'Dharohara'
           </Typography>
+         
         </Container>
       </div>
-      <Container>
-        <Grid container spacing={4} style={{ marginTop: "20px" }}>
-          {items.map((item, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
-              <ItemCard item={item} />
-            </Grid>
-          ))}
-        </Grid>
+      <Container style ={{width:"100%"}}>
+        <div className="about-us-section">
+          <h2>About Us</h2>
+          
+          <Typography className="tagline">
+            
+            <span>परंपरा से प्रेरित</span>
+          </Typography>
+          <p>Welcome to Dharohara, A place where your search ends.</p>
+          <p>Inspired by tradition, we bring you the finest art and craft from across India.</p>
+        
+
+        </div>
+        
+        <ItemCardList />
       </Container>
     </>
   );
