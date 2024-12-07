@@ -81,7 +81,7 @@ const App = () => {
             
             <span>परंपरा से प्रेरित</span>
           </Typography>
-          <p>Welcome to Dharohara, A place where your search ends.</p>
+          <p>Welcome to Dharohara, a place where your search ends.</p>
           <p>Inspired by tradition, we bring you the finest art and craft from across India.</p>
         
 

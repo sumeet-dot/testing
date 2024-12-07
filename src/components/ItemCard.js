@@ -5,8 +5,8 @@ const items = [
   { name: 'Rajasthani Bandhni', image: 'https://i.ibb.co/2n7YvYm/IMG-9777.jpg' },
   { name: 'Patiala Jooti', image: 'https://i.ibb.co/m5GRTKC/IMG-9778.jpg' },
   { name: 'Barelly Jhoomka', image: 'https://i.ibb.co/whvCTzv/IMG-9781.jpg' },
-  { name: 'Lucknowi Kurta', image: 'https://i.ibb.co/v1fjTTh/IMG-9783.jpg' },
-  { name: 'Ghungroo', image: 'https://i.ibb.co/QJ7MWzv/IMG-9786.jpg' },
+  { name: 'Lucknowi Kurta', image: 'https://i.ibb.co/QJ7MWzv/IMG-9786.jpg' },
+  { name: 'Ghungroo', image: 'https://i.ibb.co/v1fjTTh/IMG-9783.jpg' },
   { name: 'Banarasi Saree', image: 'https://i.ibb.co/dD1cX2v/IMG-9784.jpg' },
 ];
 
